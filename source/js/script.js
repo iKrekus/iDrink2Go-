@@ -19,16 +19,17 @@ const mobileMenu = () => {
 
 mobileMenu();
 
-/* Slider */
 
-const swiper = new Swiper('.swiper', {
+// Swiper
+
+const swiper = new Swiper('.swiper__wrappe', {
+  direction: 'horizontal',
   loop: true,
-  watchSlidesVisibility: true,
-  watchSlidesProgress: true,
+
   pagination: {
     el: '.swiper-pagination',
-    clickable: true,
   },
+
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',

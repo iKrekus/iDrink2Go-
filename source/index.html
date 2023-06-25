@@ -8,7 +8,7 @@
     <link rel="apple-touch-icon" href="img/favicons/apple.png">
     <link rel="manifest" href="manifest.webmanifest">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/Montserrat-Medium.woff2" as="font" crossorigin="anonymous">
@@ -74,9 +74,9 @@
     <div class="wrapper">
       <main class="main">
         <section class="promo">
-          <h2 class="visually-hidden">Слайдер с новинками</h2>
+          <h2 class="visually-hidden">Новинки кофейных напитков</h2>
           <section class="slider swiper">
-            <ul class="slider__list swiper-wrapper">
+            <ul class="slider__list swiper__wrapper">
               <li class="slider__item slider__item--white swiper-slide">
                 <div class="slider__item-inner">
                   <picture>
@@ -98,7 +98,7 @@
                     <span class="slider__badge">Новинка!</span>
                     <h2 class="slider__heading">Декаф Флэт Уайт</h2>
                     <p class="slider__description">
-                      Свежесваренный кофе без кофеина из Эфиопии с&nbsp;натуральным фермерским молоком — то, что нужно для
+                      Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для
                       расслабления после тяжёлого рабочего дня
                     </p>
                     <div class="slider__buy">
@@ -106,7 +106,6 @@
                         <span class="slider__old-price">295₽</span>
                         <span class="slider__price">225₽</span>
                       </div>
-                      <!--для проверки состояния disabled нужно назначить модификатор slider__button--disabled-->
                       <a class="slider__button" href="#catalog">Заказать</a>
                     </div>
                   </div>
@@ -141,7 +140,6 @@
                         <span class="slider__old-price">285₽</span>
                         <span class="slider__price">265₽</span>
                       </div>
-                      <!--для проверки состояния disabled нужно назначить модификатор slider__button--disabled-->
                       <a class="slider__button" href="#">Заказать</a>
                     </div>
                   </div>
@@ -176,7 +174,6 @@
                         <span class="slider__old-price">395₽</span>
                         <span class="slider__price">375₽</span>
                       </div>
-                      <!--для проверки состояния disabled нужно назначить модификатор slider__button--disabled-->
                       <a class="slider__button" href="#">Заказать</a>
                     </div>
                   </div>
@@ -650,7 +647,7 @@
         </div>
       </footer>
     </div>
-
-  <script src="./js/script.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
