@@ -6,6 +6,17 @@
   justify-content: space-between;
   padding: 40px 0 0;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-end;
+    padding-top: 72px;
+    width: 400px;
+    margin: 0 0 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 60px;
+  }
 }
 
 .pagination-list__item {
@@ -23,6 +34,10 @@
 
   &:not(:last-child) {
     margin-right: 20px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: auto;
   }
 
   &--current {
@@ -65,6 +80,18 @@
     }
   }
 
+  &--prev {
+    @media (min-width: $tablet-width) {
+      padding: 5px 20px;
+    }
+  }
+
+  &--next {
+    @media (min-width: $tablet-width) {
+      padding: 5px 20px;
+    }
+  }
+
   &--current {
     cursor: auto;
 
@@ -79,6 +106,10 @@
 }
 
 .pagination-list__link-icon {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
   &--next {
     transform: rotate(180deg);
   }
@@ -86,4 +117,8 @@
 
 .pagination-list__link span {
   display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }

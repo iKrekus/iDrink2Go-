@@ -22,7 +22,7 @@ mobileMenu();
 
 // Swiper
 
-const swiper = new Swiper('.swiper__wrappe', {
+const swiper = new Swiper('.swiper', {
   direction: 'horizontal',
   loop: true,
 

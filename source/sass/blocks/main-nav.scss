@@ -1,5 +1,32 @@
 .main-nav {
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: stretch;
+    width: 768px;
+    padding: 0 20px;
+    margin: 0 auto;
+    min-height: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+    padding: 0 40px;
+  }
+}
+
+.main-nav__logo {
+  @media (min-width: $tablet-width) {
+    order: 0;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 20px;
+  }
 }
 
 .main-nav__wrapper {
@@ -8,6 +35,10 @@
   width: 320px;
   padding: 0 0 0 20px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    display: contents;
+  }
 }
 
 .main-nav__description {
@@ -15,6 +46,12 @@
   font-family: "Montserrat Regular", "Arial", sans-serif;
   font-size: 12px;
   line-height: 16px;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    width: 170px;
+    margin-top: 24px;
+  }
 }
 
 .main-nav__toggle {
@@ -32,6 +69,10 @@
 
   &:active {
     background-color: $base-secondary;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }
 
@@ -60,4 +101,10 @@
 
 .main-nav--nojs .site-list__item {
   display: block;
+}
+
+.main-nav--closed .site-list__item {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
 }
