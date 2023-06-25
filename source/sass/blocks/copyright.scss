@@ -1,0 +1,16 @@
+.copyright__link {
+  display: flex;
+
+  &:hover,
+  &:focus {
+    color: $base-primary;
+  }
+
+  &:active {
+    color: $primary-darker;
+  }
+}
+
+.copyright__link-icon {
+  margin-left: 2px;
+}

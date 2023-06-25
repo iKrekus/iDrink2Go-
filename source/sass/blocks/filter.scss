@@ -1,0 +1,208 @@
+.filter__heading {
+  font-family: "Montserrat Semi Bold", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+.filter__range {
+  &--disabled {
+    .filter__range-bar {
+      background-color: $base-grey;
+    }
+
+    .filter__range-toggle {
+      border: 2px solid $base-grey;
+    }
+  }
+}
+
+.filter__range-controls {
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 31px 0;
+}
+
+.filter__range-scale {
+  height: 2px;
+  background-color: $light-grey;
+}
+
+.filter__range-bar {
+  position: absolute;
+  height: 4px;
+  right: 0;
+  left: 0;
+  width: 241px;
+  background-color: $primary-lighter;
+}
+
+.filter__range-toggles {
+  position: relative;
+}
+
+.filter__range-toggle {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background: $white;
+  border: 2px solid $primary-lighter;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+
+  &--min {
+    left: 0;
+    top: -11px;
+  }
+
+  &--max {
+    right: 20px;
+    top: -11px;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+  }
+
+  &:hover,
+  &:focus {
+    &::after {
+      background-color: $base-primary;
+      opacity: 0.25;
+    }
+  }
+
+  &:active {
+    &::after {
+      background-color: $base-primary;
+      opacity: 1;
+    }
+  }
+}
+
+.filter__price {
+  margin-bottom: 24px;
+  width: 280px;
+}
+
+.filter__price-controls {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 7px;
+}
+
+.filter__price-control {
+  font-family: "Montserrat Medium", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  width: 118px;
+  color: $base-black;
+  border: 2px solid $primary-lighter;
+  border-radius: 4px;
+  padding: 5px 6px;
+  text-align: center;
+
+  &--min {
+    color: $base-grey;
+  }
+
+  &::placeholder {
+    color: $base-grey;
+  }
+
+  &:focus {
+    border: 2px solid $primary-darker;
+    outline: none;
+  }
+
+  &:disabled {
+    border: 2px solid $light-grey;
+  }
+}
+
+.filter__price-control-divider {
+  position: absolute;
+  height: 3px;
+  width: 9px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: $base-grey;
+}
+
+.filter__fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.filter__buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.filter__buttons-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter__button {
+  width: 160px;
+  font-family: "Montserrat Regular", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  padding: 10px 9px;
+  border: 0;
+  border-radius: 4px;
+
+  &:hover,
+  &:focus {
+    background-color: $primary-lighter;
+  }
+
+  &:active {
+    background-color: $primary-darker;
+  }
+
+  &:disabled {
+    background-color: $base-grey;
+    cursor: not-allowed;
+  }
+
+  &--apply {
+    font-size: 13px;
+    color: $white;
+    background-color: $base-primary;
+    margin-bottom: 25px;
+  }
+
+  &--reset {
+    color: $base-primary;
+    background-color: $white;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $white;
+    }
+
+    &:disabled {
+      background-color: $light-grey;
+      color: $white;
+    }
+  }
+}
