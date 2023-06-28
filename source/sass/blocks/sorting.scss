@@ -2,15 +2,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 38px;
+  padding-top: 38px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 41px;
+    padding-top: 41px;
     justify-content: flex-end;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0;
+    padding: 0;
   }
 }
 
@@ -31,10 +31,10 @@
 
 .sorting__select {
   position: relative;
-  margin-left: 9px;
+  padding-left: 9px;
 
   @media (min-width: $tablet-width) {
-    margin: 0;
+    padding: 0;
   }
 }
 

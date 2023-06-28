@@ -90,12 +90,12 @@
 
 .features__item-img {
   @media (min-width: $tablet-width) {
-    margin-top: 8px;
+    padding-top: 8px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 21px;
-    margin-top: 0;
+    padding-bottom: 21px;
+    padding-top: 0;
   }
 }
 
