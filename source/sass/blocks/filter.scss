@@ -40,7 +40,7 @@
   position: relative;
   border-radius: 5px;
   overflow: hidden;
-  padding: 31px 0;
+  padding: 30px 0;
 
   @media (min-width: $tablet-width) {
     padding-left: 7px;
@@ -138,8 +138,11 @@
 }
 
 .filter__price {
-  padding-bottom: 28px;
-  width: 280px;
+  padding-left: 3px;
+  padding-right: 0;
+  padding-bottom: 30px;
+  width: 283px;
+
 
   @media (min-width: $tablet-width) {
     grid-area: price;
@@ -274,8 +277,9 @@
 .filter__buttons-wrapper {
   display: flex;
   flex-direction: column;
-  row-gap: 14px;
-  width: 100%;
+  row-gap: 20px;
+  width: 285px;
+  padding-left: 5px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -292,9 +296,9 @@
 .filter__button {
   width: 100%;
   font-family: "Montserrat Regular", "Arial", sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 24px;
-  padding: 10px 9px;
+  padding: 8px 9px;
   border: 0;
   border-radius: 4px;
 
@@ -317,7 +321,6 @@
   }
 
   &--apply {
-    font-size: 13px;
     color: $white;
     background-color: $base-primary;
 

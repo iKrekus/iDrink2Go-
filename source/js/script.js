@@ -39,8 +39,8 @@ const swiper = new Swiper('.swiper', {
 /* Map */
 
 const mapOptions = {
-  center: [59.96819, 30.31713],
-  zoom: 17
+  center: [59.968337, 30.317449],
+  zoom: 18
 }
 
 const map = new L.map('map', mapOptions);
@@ -62,6 +62,11 @@ var markerOptions = {
   icon: customIcon
 }
 
-const marker = L.marker({lat: 59.96819, lng: 30.31713}, markerOptions);
+// 59.968276, 30.317524
+
+
+
+
+const marker = L.marker({lat: 59.968276, lng: 30.317524}, markerOptions);
 
 marker.addTo(map);
