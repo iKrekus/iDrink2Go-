@@ -88,6 +88,12 @@
   background-repeat: no-repeat;
 }
 
+.main-nav--closed .site-list__item {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+}
+
 .main-nav--nojs .main-nav__toggle {
   display: none;
 }
@@ -99,10 +105,4 @@
 
 .main-nav--nojs .site-list__item {
   display: block;
-}
-
-.main-nav--closed .site-list__item {
-  @media (max-width: $mobile-width-only) {
-    display: none;
-  }
 }
