@@ -22,6 +22,10 @@
   line-height: 24px;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 2px;
+  }
 }
 
 .filter__range {
@@ -43,7 +47,7 @@
   padding: 30px 0;
 
   @media (min-width: $tablet-width) {
-    padding-left: 7px;
+    padding-left: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -103,10 +107,6 @@
   &--max {
     right: 20px;
     top: -11px;
-
-    @media (min-width: $tablet-width) {
-      right: 23px;
-    }
   }
 
   &::after {
@@ -145,8 +145,9 @@
 
 
   @media (min-width: $tablet-width) {
+    padding-left: 0;
     grid-area: price;
-    width: 230px;
+    width: 223px;
   }
 
   @media (min-width: $desktop-width) {
@@ -178,7 +179,7 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    width: 94px;
+    width: 87px;
     padding-right: 3px;
   }
 
@@ -188,10 +189,6 @@
 
   &--min {
     color: $base-grey;
-
-    @media (min-width: $tablet-width) {
-      padding-left: 7px;
-    }
 
     @media (min-width: $desktop-width) {
       margin: 0;
@@ -235,13 +232,13 @@
 
   @media (min-width: $tablet-width) {
     grid-area: fieldsets;
-    display: flex;
+    flex-direction: row;
     gap: 36px;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: column;
-    gap: 0;
+    row-gap: 4px;
   }
 }
 
@@ -250,6 +247,15 @@
   margin: 0;
   padding: 0;
   padding-top: 10px;
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 8px;
+    width: 100%;
+  }
 
   &--country {
     @media (min-width: $desktop-width) {
@@ -266,11 +272,12 @@
 
   @media (min-width: $tablet-width) {
     grid-area: buttons;
-    padding-top: 21px;
+    padding-top: 16px;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
+    padding-top: 19px;
   }
 }
 
@@ -283,13 +290,15 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    padding-right: 52px;
-    gap: 30px;
+    padding-right: 0;
+    padding-left: 4px;
+    gap: 21px;
   }
 
   @media (min-width: $desktop-width) {
     margin: 0;
-    gap: 18px;
+    gap: 20px;
+    padding: 0;
   }
 }
 
@@ -317,21 +326,18 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 8px 4px;
+    padding: 8px 20px;
+    font-size: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 8px 26px;
+    min-width: 149px;
   }
 
   &--apply {
     color: $white;
     background-color: $base-primary;
-
-    @media (min-width: $tablet-width) {
-      font-size: 14px;
-      width: 149px;
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 150px;
-    }
   }
 
   &--reset {
@@ -347,14 +353,6 @@
     &:disabled {
       background-color: $light-grey;
       color: $white;
-    }
-
-    @media (min-width: $tablet-width) {
-      width: 138px;
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 150px;
     }
   }
 }

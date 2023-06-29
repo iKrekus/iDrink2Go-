@@ -1,9 +1,17 @@
 .card {
   background-color: $white;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  max-width: 280px;
 
   @media (min-width: $tablet-width) {
     padding: 30px;
+    max-width: 350px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 317px;
   }
 }
 
@@ -49,6 +57,8 @@
   justify-content: space-between;
   align-items: center;
   margin-top: auto;
+  column-gap: 10px;
+  flex-wrap: wrap;
 }
 
 .card__price {
@@ -61,7 +71,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 140px;
   min-height: 36px;
   padding: 8px 20px;
   font-family: "Montserrat Regular", "Arial", sans-serif;
@@ -70,6 +79,7 @@
   color: $white;
   background-color: $base-primary;
   border-radius: 4px;
+  column-gap: 6px;
 
   &:not(.card__button--disabled):hover,
   &:not(.card__button--disabled):focus {
@@ -84,4 +94,8 @@
     background-color: $base-grey;
     cursor: not-allowed;
   }
+}
+
+.card__button-icon {
+  min-width: 20px;
 }

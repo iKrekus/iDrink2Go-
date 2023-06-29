@@ -10,6 +10,10 @@
     max-width: 300px;
     order: 2;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
 }
 
 .user-list__item {
@@ -51,6 +55,7 @@
 }
 
 .user-list__link-icon {
+  min-width: 16px;
   path {
     fill: currentColor;
   }

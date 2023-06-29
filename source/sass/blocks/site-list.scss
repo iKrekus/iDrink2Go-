@@ -15,8 +15,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 119px;
     max-width: 500px;
+    column-gap: 20px;
+    row-gap: 10px;
+    margin: auto;
+    flex-grow: 1;
   }
 }
 
@@ -30,12 +33,6 @@
     max-width: 100%;
     width: unset;
     border-top: none;
-  }
-
-  @media (min-width: $desktop-width) {
-    &:not(:last-child) {
-      padding-right: 20px;
-    }
   }
 }
 

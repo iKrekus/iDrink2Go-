@@ -62,11 +62,6 @@ var markerOptions = {
   icon: customIcon
 }
 
-// 59.968276, 30.317524
-
-
-
-
 const marker = L.marker({lat: 59.968276, lng: 30.317524}, markerOptions);
 
 marker.addTo(map);

@@ -6,6 +6,7 @@
   width: 160px;
   margin: 0;
   padding: 0;
+  column-gap: 20px;
 
   @media (min-width: $desktop-width) {
     justify-content: flex-start;
@@ -14,10 +15,6 @@
 
 .social-list__item {
   list-style: none;
-
-  &:not(:last-child) {
-    padding-right: 20px;
-  }
 }
 
 .social-list__link {

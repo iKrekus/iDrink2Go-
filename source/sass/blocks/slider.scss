@@ -70,8 +70,8 @@
     margin: 0 auto;
     display: grid;
     grid-template-columns: 600px 1fr;
-    gap: 30px;
-    padding-bottom: 79px;
+    gap: 20px;
+    padding-bottom: 80px;
     justify-items: flex-start;
   }
 }
@@ -84,7 +84,9 @@
   @media (min-width: $desktop-width) {
     width: 600px;
     height: 600px;
-    padding: 29px 0 0 21px;
+    padding: 0;
+    margin-left: 12px;
+    margin-top: 30px;
   }
 }
 
